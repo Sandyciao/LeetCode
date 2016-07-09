@@ -13,7 +13,8 @@
  *     }
  * }
  */
-/* The method places focus on lists length, insteading of comparing list values. The program complexity is O(n+m).*//* If n > m, for the first n elements is to conteract the list position, the second m elements finds the answer.  */
+/* The method places focus on lists length, insteading of comparing list values. The program complexity is O(n+m).*/
+/* If n > m, for the first n elements is to conteract the list position, the second m elements finds the answer.  */
 
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
