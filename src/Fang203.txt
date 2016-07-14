@@ -8,11 +8,11 @@
  */
 public class Solution {
     public ListNode removeElements(ListNode head, int val) {
-        
+        // no elemets in Linkedlist
         if (head == null)
 	        
             return head;
-            
+        // only one element in Linkedlist    
         if (head.next == null){
             
             if (head.val == val){
@@ -21,7 +21,10 @@ public class Solution {
             }
             return head;
         }
-
+	
+	// more than 1 elements in LinkedList
+	// create two points. point start, which won't move, is for retrun the listnode.
+	// the other point checkpoint, which is to traverse the linkedlist
         ListNode start = new ListNode(-1);
         ListNode checkPoint = start;
         
